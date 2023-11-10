@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HPBD</title>
-<meta charset="utf-8">
-</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật!</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
-
 <body>
-<h1 style="color:red;">Chúc mừng sinh nhật anh nghệ sĩ tự xưng Vũ Hoàng =))</h1>
-    
-<img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/358075248_1004025240619556_6230446835058368525_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=52f669&_nc_ohc=vZsNRK8viUsAX-WeYCL&_nc_ht=scontent.fdad1-3.fna&oh=00_AfCrepEOLF8VkNH_OqQRqQqVeFlGW7FM7O36DAiSY3bDIw&oe=6524D36D"> 
+    <div class="birthday-card" id="birthdayCard" onclick="revealMessage()">
+        <div class="greeting">
+            <h1>Chúc mừng sinh nhật!</h1>
+            <p>Chúc mừng BO VG đã thêm một tuổi mới! Jenny Huynh chuc anh hanh phuc ben nguoi moi nhe.</p>
+        </div>
+        <img src="https://vcdn-thethao.vnecdn.net/2023/08/10/361930212-774446801353926-8825-8041-6932-1691639677.jpg" alt="NYC" width="100" height="100">
+        <div class="interactive-message" id="interactiveMessage">
+            <p>🎉 Nhấp để mở quà 🎁</p>
+        </div>
+        <div class="hidden-message" id="hiddenMessage">
+            <p>🎊Ban da thanh cong co first love dau doi, NTVG </p>
+        </div>
+    </div>
 
-<a href="https://www.youtube.com/">Trang web học Fullstack</a>
+    <script>
+        function revealMessage() {
+            var interactiveMessage = document.getElementById("interactiveMessage");
+            var hiddenMessage = document.getElementById("hiddenMessage");
+
+            interactiveMessage.style.display = "none";
+            hiddenMessage.style.display = "block";
+        }
+    </script>
 </body>
 </html>
